@@ -3,15 +3,15 @@ import "./ChatRoom.scss"
 
 class ChatRoom extends Component{
     render() {
-        const msgs  = this.props.chatHistory.map((msg,index) => (
+        const msgs  = this.props.chatRoom.map((msg,index) => (
             <p key = {index} > {msg.data}</p>
         ));
     
 
     return (
         <div className = "ChatRoom">
-            <h2>Chat History</h2>
-            {msg}
+            <h2>Chat Room</h2>
+            {msgs}
         </div>
 
      );
